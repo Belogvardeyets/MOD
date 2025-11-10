@@ -1,0 +1,24 @@
+-- prishlyy_start.script
+function check and_start()
+Local actor = nil
+if type(get_actor) = "function" then
+actor = get_actor()
+end
+if not actor then return end
+if type (has_alife_info) = "function" then
+Local ok, has = pcall(has_alife_info, "prishlyy_find_buryy")
+if not ok or not has then
+if type(give_task = "function" then
+pcall(give_task,
+"prishlyy_find_buryy", actor)
+end
+end
+else
+if type (give_task) = "function" then
+pcall(give_task, "prishlyy_find_buryy", actor)
+end
+end
+end
+function on_game_start()
+RegisterScriptCallback(" actor_on_first_update", check_and_start)
+end
