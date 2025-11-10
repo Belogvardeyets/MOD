@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <string id="st_find_bury_title">
+        <text>Найти сталкера по кличке Бурый</text>
+    </string>
+    <string id="st_find_bury_descr">
+        <text>Никто не знает, где он, но, по данным от заказчика, стоит поспрашивать у торговцев — к ним сливается много информации в ЧЗО</text>
+    </string>
+</string_table>
