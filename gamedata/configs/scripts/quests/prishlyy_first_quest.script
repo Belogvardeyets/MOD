@@ -2,18 +2,13 @@
 
 local quest_id = "prishlyy_first_quest"
 
--- Функция запуска квеста
+-- Функция запуска квеста через действия
 function start_prishlyy_first_quest()
-    -- Проверяем, что квест ещё не выдан
-    if not game:actor():has_info_portion(quest_id) then
-        -- Добавляем инфо‑порцию (чтобы не выдать заново)
-        game:actor():give_info_portion(quest_id)
-        -- Добавляем квест в КПК
-        game:give_quest(
-            quest_id,
-            "Найти человека по кличке Бурый",        -- название
-            "Необходимо найти человека по прозвищу Бурый. Никто не знает, где он, но, по данным от заказчика, нужно поспрашивать у всех торговцев — к ним сливается многая информация в ЧЗО."
-        )
+    -- Проверяем условие из prishlyy_first_quest_conditions
+    if cond_prishlyy_first_quest_start() then
+        -- Выдаём квест через действия
+        act_prishlyy_first_quest_give()
+        act_prishlyy_first_quest_notify()
     end
 end
 
