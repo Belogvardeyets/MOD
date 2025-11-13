@@ -1,16 +1,17 @@
-; TASKS PROVIDED BY Prishlyy mod
-; Поместите в gamedata/configs/misc/task/ (task_manager автоматически include "tm_*.ltx")
-
+; Prishlyy tasks — расширенная версия (рекомендуется для отладки)
 [prishlyy_find_buryy]
 icon = ui_inGame2_PD_Torgovets_informatsiey
 storyline = false
 prior = 40
+; target = some_npc_or_location    ; опционально, если нужно указать цель
+; condlist_0 = {} complete         ; примеры условий
 
 title = prishlyy_find_buryy_name
 descr = prishlyy_find_buryy_text
 job_descr = prishlyy_find_buryy_job
 task_complete_descr = prishlyy_find_buryy_complete
 
-; (опционально) можно добавить on_init/on_complete/on_fail по образцу других задач
-; on_init = %=some_init_function()%
-; on_complete = %=some_complete_function()%
+; Пример простого on_init (раскомментируйте при необходимости)
+; on_init = %=prishlyy_on_init()%
+; Пример on_complete (можно дать награду, снять флаги и т.п.)
+; on_complete = %=prishlyy_on_complete()%
