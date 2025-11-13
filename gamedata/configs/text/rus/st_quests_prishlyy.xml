@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_prishlyy_pda_message">
+		<text>Заказчик: Приветствую. По сигналу с твоего ПДА вижу, что ты уже прошел периметр. Ищи человека по прозвищу Бурый. Обычно у торговцев сливается вся информация – поспрашивай, может кто и знает где он.</text>
+	</string>
+	<string id="prishlyy_find_buryy_name">
+		<text>Найти человека по прозвищу Бурый</text>
+	</string>
+	<string id="prishlyy_find_buryy_text">
+		<text>Найти человека по прозвищу «Бурый». Поспрашивать у торговцев — возможно, у кого-то есть информация.</text>
+	</string>
+	<string id="prishlyy_find_buryy_job">
+		<text>Поспрашивайте торговцев о человеке по прозвищу Бурый. Может быть, кто-то из них знает его местоположение или может дать полезную информацию.</text>
+	</string>
+	<string id="prishlyy_find_buryy_complete">
+		<text>Задача завершена.</text>
+	</string>
+</string_table>
