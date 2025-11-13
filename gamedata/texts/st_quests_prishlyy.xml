@@ -1,0 +1,14 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<lang id="ru">
+    <!-- Сообщение, которое придёт в ПДА (используется prishlyy_init.script) -->
+    <string id="st_prishlyy_pda_message">
+        <![CDATA[Заказчик: Приветствую. По сигналу с твоего ПДА вижу, что ты уже прошел периметр. Ищи человека по прозвищу Бурый. Обычно у торговцев сливается вся информация – поспрашивай, может кто и знает где он.]]>
+    </string>
+
+    <!-- Текст для задания -->
+    <string id="prishlyy_find_buryy_name"><![CDATA[Найти человека по прозвищу Бурый]]></string>
+    <string id="prishlyy_find_buryy_text"><![CDATA[Найдите человека по прозвищу «Бурый». Спросите торговцев — возможно, кто-то видел или знает, где он появляется.]]></string>
+    <string id="prishlyy_find_buryy_job"><![CDATA[Ищи Бурого: Опроси торговцев на базах.]]></string>
+    <string id="prishlyy_find_buryy_complete"><![CDATA[Вы получили информацию о Буром.]]></string>
+</lang>
