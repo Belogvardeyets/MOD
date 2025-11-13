@@ -1,0 +1,32 @@
+-- Скрипт инициализации Prishlyy: при первой загрузке (новая игра) отправляет сообщение на ПДА и даёт задачу.
+-- Разработан в стиле существующих скриптов Anomaly (вызывает news_manager.send_tip и task_manager).
+
+local function prishlyy_try_init()
+    if (not db) or (not db.actor) then return end
+
+    -- Флаг, чтобы не повторять (аналогично другим скриптам: give_info_portion / has_info)
+    if db.actor:has_info("prishlyy_init_done") then
+        return
+    end
+
+    -- Отправляем сообщение в ПДА (используем ключ локализации st_prishlyy_pda_message)
+    -- Формат: news_manager.send_tip(actor, text, duration_seconds, sender_id, delay_ms, persistent)
+    news_manager.send_tip(db.actor, game.translate_string("st_prishlyy_pda_message"), 10, "prishlyy", 11000, 1)
+
+    -- Даём задачу игроку (в task-файле ниже определён prishlyy_find_buryy)
+    task_manager.get_task_manager():give_task("prishlyy_find_buryy")
+
+    -- Ставим флаг, чтобы при загрузке/рестартах не давать заново
+    db.actor:give_info_portion("prishlyy_init_done")
+end
+
+-- Простая регистрация: многие скрипты в репозитории используют on_game_load-паттерн.
+-- Определяем глобальную функцию on_game_load, если движок вызывает её из каждого файла.
+-- Если в вашей сборке существует другой подход (например, централизованный on_game_load),
+-- интегрируйте prishlyy_try_init в тот хук.
+function on_game_load()
+    -- Не мешаем существующим on_game_load в других скриптах — вызываем только нашу логику.
+    -- (Если уже есть on_game_load в другом скрипте, убедитесь, что оба выполняются;
+    -- при необходимости можно перенести prishlyy_try_init в центральный on_game_load)
+    prishlyy_try_init()
+end
