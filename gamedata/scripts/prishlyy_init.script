@@ -1,57 +1,67 @@
--- Prishlyy init: безопасный on_game_load wrapper + отладка
--- Вставьте/замените файл в gamedata/scripts/
+-- Безопасный init для Prishlyy: ставим zzz_ чтобы загружаться последним, добавляем отладку
+-- Положите в gamedata/scripts/zzz_prishlyy_init.script
 
 local function prishlyy_try_init()
     if (not db) then
-        printf("prishlyy: no db")
+        printf("prishlyy: NO db")
         return
     end
     if (not db.actor) then
-        printf("prishlyy: no db.actor yet")
+        printf("prishlyy: NO db.actor yet")
         return
     end
 
-    -- Защитная проверка менеджеров
     if (not news_manager) then
-        printf("prishlyy: news_manager is nil")
+        printf("prishlyy: NO news_manager")
         return
     end
     if (not task_manager) then
-        printf("prishlyy: task_manager is nil")
+        printf("prishlyy: NO task_manager")
         return
     end
 
-    -- Флаг, чтобы не повторять
     if db.actor:has_info("prishlyy_init_done") then
-        printf("prishlyy: already initialized")
+        printf("prishlyy: already initialized (flag present)")
         return
     end
 
-    -- Отправка сообщения в ПДА
-    printf("prishlyy: sending PDA message")
-    news_manager.send_tip(db.actor, game.translate_string("st_prishlyy_pda_message"), 10, "prishlyy", 11000, 1)
+    -- отправляем PDA-уведомление
+    printf("prishlyy: sending PDA message (st_prishlyy_pda_message)")
+    local ok, err = pcall(function()
+        news_manager.send_tip(db.actor, game.translate_string("st_prishlyy_pda_message"), 10, "prishlyy", 11000, 1)
+    end)
+    if not ok then
+        printf("prishlyy: error sending PDA message: %s", tostring(err))
+    end
 
-    -- Выдача задачи
+    -- даём задачу
     printf("prishlyy: giving task prishlyy_find_buryy")
-    task_manager.get_task_manager():give_task("prishlyy_find_buryy")
+    local ok2, err2 = pcall(function()
+        task_manager.get_task_manager():give_task("prishlyy_find_buryy")
+    end)
+    if not ok2 then
+        printf("prishlyy: error give_task: %s", tostring(err2))
+    end
 
-    -- Поставить флаг
+    -- устанавливаем флаг, чтобы не давать заново
     db.actor:give_info_portion("prishlyy_init_done")
-    printf("prishlyy: init done")
+    printf("prishlyy: init flag set")
 end
 
--- Безопасная регистрация в on_game_load: сохраняем старую функцию (если есть),
--- вызываем её, затем нашу.
+-- Не перезаписываем чужой on_game_load, но гарантируем вызов:
 local _old_on_game_load = on_game_load
 function on_game_load()
-    -- вызываем старую, если она есть
     if _old_on_game_load then
-        pcall(_old_on_game_load)
+        -- защищённо вызываем старую реализацию
+        local ok, err = pcall(_old_on_game_load)
+        if not ok then
+            printf("prishlyy: old on_game_load error: %s", tostring(err))
+        end
     end
 
-    -- вызываем нашу логику в pcall, чтобы ошибки не прерывали другие on_game_load
-    local ok, err = pcall(prishlyy_try_init)
-    if not ok then
-        printf("prishlyy: error in prishlyy_try_init: %s", tostring(err))
+    -- вызываем нашу и логируем ошибки
+    local ok2, err2 = pcall(prishlyy_try_init)
+    if not ok2 then
+        printf("prishlyy: prishlyy_try_init error: %s", tostring(err2))
     end
 end
