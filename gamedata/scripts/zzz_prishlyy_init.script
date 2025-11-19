@@ -1,0 +1,119 @@
+local function give_task_safe(task_id)
+    if not rawget(_G, "task_manager") then
+        printf("prishlyy: no global task_manager")
+        return false
+    end
+    local tm = task_manager
+    local manager = nil
+    if tm.get_task_manager then
+        manager = tm.get_task_manager()
+    else
+        manager = tm
+    end
+    if not manager or (not manager.give_task and not manager.giveTask) then
+        printf("prishlyy: task manager API not found (no give_task)")
+        return false
+    end
+    local ok, err = pcall(function()
+        if manager.give_task then
+            manager:give_task(task_id)
+        else
+            manager:giveTask(task_id)
+        end
+    end)
+    if not ok then
+        printf("prishlyy: error giving task '%s': %s", tostring(task_id), tostring(err))
+        return false
+    end
+    printf("prishlyy: task '%s' given", tostring(task_id))
+    return true
+end
+
+local function safe_truncate(s, n)
+    if not s then return "" end
+    if #s <= n then return s end
+    return s:sub(1, n) .. "..."
+end
+
+local function send_prishlyy_news_later()
+    if not db or not db.actor then
+        printf("prishlyy: no actor to send news")
+        return
+    end
+    local subject = game.translate_string("prishlyy_find_buryy_cst")
+        or game.translate_string("prishlyy_find_buryy_name")
+        or "Заказчик"
+    local body = game.translate_string("st_prishlyy_pda_message") or ""
+    printf("prishlyy: DEBUG subject='%s' (len=%d)", tostring(subject), tostring(#tostring(subject)))
+    printf("prishlyy: DEBUG body_snippet='%s' (len=%d)", safe_truncate(tostring(body), 200), #tostring(body))
+    local icon = ""
+    local delay_ms = 0
+    local duration_ms = 20000
+    if rawget(_G, "callbacks") and callbacks.ACTOR_UPDATE_SCRIPT then
+        db.actor:set_callback(callbacks.ACTOR_UPDATE_SCRIPT, function(self)
+            local ok, err = pcall(function()
+                self:give_game_news(subject, body, icon, delay_ms, duration_ms, 1)
+            end)
+            if not ok then
+                printf("prishlyy: give_game_news error: %s", tostring(err))
+            else
+                printf("%s", string.format(
+                    "prishlyy: give_game_news called on actor update (delay=%d dur=%d) — subject_len=%d body_len=%d",
+                    delay_ms, duration_ms, #tostring(subject), #tostring(body)))
+            end
+            self:set_callback(callbacks.ACTOR_UPDATE_SCRIPT, nil)
+        end)
+    else
+        local ok, err = pcall(function()
+            db.actor:give_game_news(subject, body, icon, delay_ms, duration_ms, 1)
+        end)
+        if not ok then
+            printf("prishlyy: give_game_news fallback error: %s", tostring(err))
+        else
+            printf("%s", string.format(
+                "prishlyy: give_game_news fallback called (delay=%d dur=%d) — subject_len=%d body_len=%d",
+                delay_ms, duration_ms, #tostring(subject), #tostring(body)))
+        end
+    end
+end
+
+local function prishlyy_try_init()
+    if (not db) then
+        printf("prishlyy: NO db")
+        return
+    end
+    if (not db.actor) then
+        printf("prishlyy: NO db.actor yet")
+        return
+    end
+    if db.actor:has_info("prishlyy_init_done") then
+        printf("prishlyy: already initialized (flag present)")
+        return
+    end
+    local ok = give_task_safe("prishlyy_find_buryy")
+    if not ok then
+        printf("prishlyy: failed to give task — will not set init flag")
+        return
+    end
+    send_prishlyy_news_later()
+    db.actor:give_info_portion("prishlyy_init_done")
+    printf("prishlyy: init flag set.")
+end
+
+local handlers = rawget(_G, "__prishlyy_on_game_load_handlers") or {}
+rawset(_G, "__prishlyy_on_game_load_handlers", handlers)
+table.insert(handlers, prishlyy_try_init)
+
+local function install_dispatcher()
+    if rawget(_G, "__prishlyy_on_game_load_dispatcher_installed") then return end
+    local prev_on_game_load = rawget(_G, "on_game_load")
+    rawset(_G, "on_game_load", function()
+        if prev_on_game_load then pcall(prev_on_game_load) end
+        local hlist = rawget(_G, "__prishlyy_on_game_load_handlers") or {}
+        for i = 1, #hlist do pcall(hlist[i]) end
+    end)
+    rawset(_G, "__prishlyy_on_game_load_dispatcher_installed", true)
+    printf("prishlyy: dispatcher installed")
+end
+
+install_dispatcher()

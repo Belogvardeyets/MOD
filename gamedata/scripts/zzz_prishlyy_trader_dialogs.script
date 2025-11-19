@@ -1,0 +1,3 @@
+function st_prishlyy_buryy_reply(a, b)
+    return game.translate_string("st_prishlyy_buryy_answer")
+end
