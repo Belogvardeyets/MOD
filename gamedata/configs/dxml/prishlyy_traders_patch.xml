@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<dxml>
+
+    <!-- Бар 100 Рентген -->
+    <patch xpath="//character[@id='bar_visitors_barman_stalker_trader']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Петренко (Долг) -->
+    <patch xpath="//character[@id='bar_dolg_general_petrenko_stalker']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Чистое Небо — бармен -->
+    <patch xpath="//character[@id='sim_default_csky_barman']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Долг — бармен -->
+    <patch xpath="//character[@id='sim_default_dolg_barman']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Экологи — бармен -->
+    <patch xpath="//character[@id='sim_default_ecolog_barman']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Свобода — бармен -->
+    <patch xpath="//character[@id='sim_default_freedom_barman']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Юпитер — Аshot (Freedom Trader) -->
+    <patch xpath="//character[@id='jup_a6_freedom_trader_ashot']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Болота — Сова -->
+    <patch xpath="//character[@id='mar_base_owl_stalker_trader']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Кордон — свобода/военные бармен -->
+    <patch xpath="//character[@id='mil_freedom_barman_mlr']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Янтарь — Сахаров -->
+    <patch xpath="//character[@id='yan_stalker_sakharov']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Затон — Сова -->
+    <patch xpath="//character[@id='zat_b30_owl_stalker_trader']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <!-- Escape -->
+    <patch xpath="//character[@id='esc_2_12_stalker_trader']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <patch xpath="//character[@id='esc_2_12_stalker_wolf']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+    <patch xpath="//character[@id='esc_2_12_stalker_fanat']/dialog" op="append">
+        <dialog id="prishlyy_traders_main"/>
+    </patch>
+
+</dxml>

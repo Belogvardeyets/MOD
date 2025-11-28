@@ -1,0 +1,64 @@
+local DIALOG_ID = "prishlyy_haw"
+
+local PATH_DIALOG_PLUGIN      = [[gameplay\prishlyy_haw_dialog.xml]]
+local PATH_STRINGS_RUS        = [[text\rus\prishlyy_haw.xml]]
+
+-- helper: safe pcall + printf
+local function try_call(name, fn)
+    local ok, err = pcall(fn)
+    if not ok then
+        printf("prishlyy_haw: ERROR in %s -> %s", name, tostring(err))
+        return false
+    end
+    return true
+end
+
+function on_xml_read()
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        -- 1) Insert dialog into gameplay\dialogs.xml
+        if xml_file_name == [[gameplay\dialogs.xml]] then
+            -- check if dialog is already present
+            local res = xml_obj:query("dialog[id=" .. DIALOG_ID .. "]")
+            if not res[1] then
+                try_call("insert dialog", function()
+                    xml_obj:insertFromXMLFile(PATH_DIALOG_PLUGIN)
+                    printf("prishlyy_haw: inserted dialog from %s into gameplay\\dialogs.xml", PATH_DIALOG_PLUGIN)
+                end)
+            else
+                printf("prishlyy_haw: dialog already present in gameplay\\dialogs.xml")
+            end
+        end
+
+       
+        if xml_file_name == [[text\rus\st_dialogs.xml]] then
+            local already = xml_obj:query("string[id=" .. DIALOG_ID .. "_0]")
+            if not already[1] then
+                try_call("insert rus strings", function()
+                    xml_obj:insertFromXMLFile(PATH_STRINGS_RUS)
+                    printf("prishlyy_haw: inserted rus strings from %s", PATH_STRINGS_RUS)
+                end)
+            else
+                printf("prishlyy_haw: rus strings already present in text\\rus\\st_dialogs.xml")
+            end
+        end
+
+    end)
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_dialog_list", function(character_id, dialog_list)
+        if character_id == "jup_a6_stalker_barmen" then
+        
+            if not dialog_list:has(DIALOG_ID) then
+                local pos = dialog_list:add(DIALOG_ID)
+                if pos then
+                    printf("prishlyy_haw: added dialog '%s' for %s at pos %s", DIALOG_ID, character_id, tostring(pos))
+                else
+                    printf("prishlyy_haw: failed to add dialog '%s' for %s", DIALOG_ID, character_id)
+                end
+            else
+                printf("prishlyy_haw: dialog '%s' already present for %s", DIALOG_ID, character_id)
+            end
+        end
+    end)
+end

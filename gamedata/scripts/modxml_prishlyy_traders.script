@@ -1,0 +1,65 @@
+-- modxml_prishlyy_traders.script
+local DIALOG_ID = "prishlyy_traders_main"
+
+-- helper
+local function try_call(name, fn)
+    local ok, err = pcall(fn)
+    if not ok then
+        printf("modxml_prishlyy_traders: ERROR in %s -> %s", name, tostring(err))
+        return false
+    end
+    return true
+end
+
+function on_xml_read()
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        -- Подключаем диалог в gameplay\dialogs.xml, если нужно
+        if xml_file_name == [[gameplay\dialogs.xml]] then
+            local res = xml_obj:query("dialog[id=" .. DIALOG_ID .. "]")
+            if not res[1] then
+                try_call("insert dialog", function()
+                    xml_obj:insertFromXMLFile([[gameplay\prishlyy_traders_dialog.xml]])
+                    printf("modxml_prishlyy_traders: inserted dialog from gameplay\\prishlyy_traders_dialog.xml")
+                end)
+            else
+                printf("modxml_prishlyy_traders: dialog already present in gameplay\\dialogs.xml")
+            end
+        end
+
+        -- Подключаем русские строки в st_dialogs.xml (или другой основной файл строк)
+        if xml_file_name == [[text\rus\st_dialogs.xml]] then
+            local already = xml_obj:query("string[id=prishlyy_traders_main_0]")
+            if not already[1] then
+                try_call("insert rus strings", function()
+                    xml_obj:insertFromXMLFile([[text\rus\prishlyy_traders_strings_rus.xml]])
+                    printf("modxml_prishlyy_traders: inserted rus strings from text\\rus\\prishlyy_traders_strings_rus.xml")
+                end)
+            else
+                printf("modxml_prishlyy_traders: rus strings already present in text\\rus\\st_dialogs.xml")
+            end
+        end
+    end)
+end
+
+function on_game_start()
+    -- callback: добавляем диалог конкретным NPC (если движок вызывает этот callback)
+    RegisterScriptCallback("on_specific_character_dialog_list", function(character_id, dialog_list)
+        if not dialog_list then return end
+        -- исключаем гавайца
+        if character_id == "jup_a6_stalker_barmen" then
+            return
+        end
+
+        -- если у NPC ещё нет нашего dialog id — добавляем
+        if not dialog_list:has(DIALOG_ID) then
+            local pos = dialog_list:add(DIALOG_ID)
+            if pos then
+                printf("modxml_prishlyy_traders: added dialog '%s' for %s at pos %s", DIALOG_ID, character_id, tostring(pos))
+            else
+                printf("modxml_prishlyy_traders: failed to add dialog '%s' for %s", DIALOG_ID, character_id)
+            end
+        else
+            printf("modxml_prishlyy_traders: dialog '%s' already present for %s", DIALOG_ID, character_id)
+        end
+    end)
+end

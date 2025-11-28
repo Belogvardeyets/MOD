@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <string id="prishlyy_find_buryy_name">
+        <text>Найти человека по прозвищу Бурый</text>
+    </string>
+
+    <string id="prishlyy_find_buryy_text">
+        <text>Нужно спрашивать у всех торговцев ЧЗО, возможно кто-то его видел и знает где он находится.</text>
+    </string>
+
+    <string id="st_prishlyy_pda_message">
+        <text>Приветствую. По сигналу с твоего ПДА вижу, что ты уже прошел периметр. Ищи человека по прозвищу Бурый. Обычно у торговцев сливается вся информация – поспрашивай, может кто и знает где он. Да,к Монолиту, Бандитам, Наёмникам, Греху, Ренегатам, ИИГ, Военныым-не суйся.</text>
+    </string>
+    <string id="prishlyy_find_buryy_cst">
+        <text>Заказчик</text>
+    </string>
+    <string id="prishlyy_find_buryy_job">
+        <text>Поспрашивайте торговцев о человеке по прозвищу Бурый. Может быть, кто-то из них знает его местоположение или может дать полезную информацию.</text>
+    </string>
+
+    <string id="prishlyy_find_buryy_complete">
+        <text>Задача завершена.</text>
+    </string>
+</string_table>
