@@ -1,0 +1,25 @@
+function spawn_buryy_unique()
+    -- Проверяем, существует ли он уже
+    local se_obj = get_story_object("buryy_unique")
+    if se_obj then
+        printf("Бурый уже существует в игре.")
+        return
+    end
+
+    -- Координаты из вашего лога (l11_pripyat)
+    -- x = -19.61..., y = 0.13..., z = 204.50...
+    local pos = vector():set(-19.614, 0.135, 204.504)
+    local lvid = 79673
+    local gvid = 2985 
+    
+    se_obj = alife():create("buryy_spawn_sect", pos, lvid, gvid)
+
+    if not se_obj then
+        printf("ОШИБКА: Не удалось создать секцию buryy_spawn_sect")
+        return
+    end
+end
+
+function on_game_start()
+    spawn_buryy_unique()
+end

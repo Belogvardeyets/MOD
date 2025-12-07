@@ -1,0 +1,888 @@
+* Detected CPU: VirtualApple @ 2.50GHz [GenuineIntel], F6/M12/S0, 999.00 mhz, 13-clk 'rdtsc'
+* CPU features: RDTSC, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2
+* CPU cores/threads: 8/8
+
+Found commandline file!
+Initializing File System...
+using fs-ltx fsgame.ltx
+File System Ready...
+FS: 51570 files cached 67 archives, 10517Kb memory used.
+Init FileSystem 1.280607 sec
+'xrCore' build 9360, Sep 23 2024
+
+EH: 3CAABCFCFF6F3A810019C6A72180F166
+
+-----loading c:/anomaly\gamedata\configs\system.ltx [2]
+X-Ray Monolith v1.5.3
+gamedata: 'configs\axr_options.ltx'
+gamedata: 'configs\gameplay\profiles\character_desc_buryy.xml'
+gamedata: 'configs\localization.ltx'
+gamedata: 'configs\mod_system_buryy.ltx'
+gamedata: 'configs\scripts\buryy_logic.ltx'
+gamedata: 'scripts\modxml_buryy_spawn.script'
+gamedata: 'textures\ui\ui_ingame2_buryy.dds'
+Initializing Engine...
+Starting INPUT device...
+Available render modes[1]:
+[renderer_r1]
+command line "c:\anomaly\bin\anomalydx8.exe"  -smap2048 
+Executing config-script "user.ltx"...
+[c:/anomaly\appdata\user.ltx] successfully loaded.
+Loading DLL: xrRender_R1.dll
+Loading DLL: xrGame.dll
+* [x-ray]: Full Memory Stats
+* [win32]: free[137438776100 K], reserved[16256 K], committed[161052 K]
+* [ D3D ]: textures[0 K]
+* [x-ray]: process heap[45253 K]
+* [x-ray]: economy: strings[29479 K], smem[0 K]
+SOUND: OpenAL: enumerate devices...
+SOUND: OpenAL: EnumerationExtension Present
+dir[1]=C:\Anomaly\
+dir[2]=C:\Anomaly\bin\
+dir[3]=C:\windows\system32\
+CleanDeviceSpecifierList
+CleanDeviceSpecifierList OpenAL Soft
+devices OpenAL Soft
+SOUND: OpenAL: system  default SndDevice name is 
+SOUND: OpenAL: All available devices:
+1. OpenAL Soft, Spec Version 1.1  eax[0] efx[no] xram[no]
+Executing config-script "c:/anomaly\gamedata\configs\default_controls.ltx"...
+[c:/anomaly\gamedata\configs\default_controls.ltx] successfully loaded.
+Executing config-script "user.ltx"...
+Executing config-script "c:/anomaly\gamedata\configs\rspec_default.ltx"...
+[c:/anomaly\gamedata\configs\rspec_default.ltx] successfully loaded.
+Executing config-script "c:/anomaly\gamedata\configs\default_controls.ltx"...
+[c:/anomaly\gamedata\configs\default_controls.ltx] successfully loaded.
+[c:/anomaly\appdata\user.ltx] successfully loaded.
+SOUND: Selected device is OpenAL Soft
+* sound: EAX 2.0 extension: absent
+* sound: EAX 2.0 deferred: absent
+* sound : cache: 524296 kb, 38848 lines, 13820 bpl
+Starting RENDER device...
+* GPU [vendor:10DE]-[device:191]: NVIDIA GeForce 8800 GTX
+* GPU driver: 9.16.13.4052
+* CREATE: DeviceREF: 1
+* Vertex Processor: PURE HARDWARE
+*     Texture memory: 4095 M
+*          DDI-level: 9.0
+* GPU shading: vs(fffe0300/3.0/30), ps(ffff0300/3.0/30)
+* GPU vertex cache: unrecognized, 16
+* NVAPI is missing.
+* Starting rendering as 2-GPU.
+* DVB created: 4096K
+* DIB created: 512K
+* distortion: used, dev(30),need(14)
+* color_mapping: used, dev(30),need(14)
+* Managed textures disabled
+* SSample: 1710x1106
+compiling shader postprocess
+compiling shader postprocess_d
+compiling shader postprocess_cm_pre
+* SSample: enabled
+compiling shader particle_distort
+compiling shader particle [2]
+compiling shader simple_color
+compiling shader portal
+compiling shader editor
+compiling shader sky2 [2]
+compiling shader clouds [2]
+[Discord RPC] Failed to create Discord RPC
+* [x-ray]: Starting Main Loop
+Starting engine...
+compiling shader hud_font
+intro_start intro_logo
+intro_delete ::update_logo_intro
+* [x-ray]: Full Memory Stats
+* [win32]: free[137437824532 K], reserved[18944 K], committed[1109932 K]
+* [ D3D ]: textures[16 K]
+* [x-ray]: process heap[696781 K]
+* [x-ray]: economy: strings[29419 K], smem[0 K]
+*  0.0 : [  55] $null
+*  0.0 : [   2] $user$cmap0
+*  0.0 : [   2] $user$cmap1
+*  0.0 : [   3] $user$distort
+*  0.0 : [   6] $user$rendertarget
+*  0.0 : [   5] $user$rendertarget_color_map
+*  0.0 : [   1] $user$sky0
+*  0.0 : [   1] $user$sky1
+*  0.0 : [   1] $user$tonemap
+*  0.0 : [   1] $user$ui
+*  0.0 : [   1] $user$viewport2
+*  0.0 : [   1] act\act_controller_hit1
+*  0.0 : [   1] amik\anomaly\electric_radial
+*  0.0 : [   1] amik\explosions\anim_dirtexp_3
+*  0.0 : [   1] amik\explosions\boom_0
+*  0.0 : [   1] amik\explosions\boom_1
+*  0.0 : [   1] amik\explosions\boom_2
+*  0.0 : [   1] amik\explosions\decal_concrete
+*  0.0 : [   1] amik\explosions\explo_end
+*  0.0 : [   1] amik\explosions\explosion_dynamite\explosion_din
+*  0.0 : [   1] amik\explosions\explosion_dynamite\flashlight
+*  0.0 : [   1] amik\explosions\explosion_dynamite\smoke
+*  0.0 : [   1] amik\explosions\explosion_flash_atlas
+*  0.0 : [   1] amik\explosions\explosion_fuelcan\boom_1
+*  0.0 : [   1] amik\explosions\explosion_fuelcan\boom_3
+*  0.0 : [   1] amik\explosions\explosion_fuelcan\grey_xpl
+*  0.0 : [   1] amik\explosions\explosion_smoke03
+*  0.0 : [   1] amik\explosions\final_expl
+*  0.0 : [   1] amik\explosions\ring_grey
+*  0.0 : [   1] amik\explosions\smoke128_3w
+*  0.0 : [   1] amik\explosions\smoke2
+*  0.0 : [   1] amik\explosions\smoke_cannon
+*  0.0 : [   1] amik\explosions\smoke_white_tiled3
+*  0.0 : [   1] amik\hit_fx\blood\962e6155
+*  0.0 : [   1] amik\hit_fx\blood\blood
+*  0.0 : [   1] amik\hit_fx\blood\m
+*  0.0 : [   1] amik\hit_fx\water_splash\water_splash_anim
+*  0.0 : [   1] amik\hit_fx\water_splash\water_spurt
+*  0.0 : [   1] amik\nature\list
+*  0.0 : [   1] amik\nature\stonedebris1
+*  0.0 : [   1] amik\nature\wood_part
+*  0.0 : [   1] amik\static\gas_light\flame_zippo
+*  0.0 : [   1] amik\weapons\00
+*  0.0 : [   1] amik\weapons\12x70
+*  0.0 : [   1] amik\weapons\6ways1
+*  0.0 : [   1] amik\weapons\6ways2
+*  0.0 : [   1] amik\weapons\9x39
+*  0.0 : [   1] amik\weapons\btr\muzzle6ways1
+*  0.0 : [   1] amik\weapons\btr\muzzle6ways2
+*  0.0 : [   1] amik\weapons\dtk_2
+*  0.0 : [   1] amik\weapons\dtk_3
+*  0.0 : [   1] amik\weapons\dtk_4
+*  0.0 : [   1] amik\weapons\dtk_4_1
+*  0.0 : [   1] amik\weapons\dtk_5
+*  0.0 : [   1] amik\weapons\dtk_6
+*  0.0 : [   1] amik\weapons\dtk_8
+*  0.0 : [   1] amik\weapons\flame\flameshoot_1
+*  0.0 : [   1] amik\weapons\flame\flameshoot_2
+*  0.0 : [   1] amik\weapons\flame\flameshoot_3
+*  0.0 : [   1] amik\weapons\flame\flameshoot_4
+*  0.0 : [   1] amik\weapons\flame\flameshoot_5
+*  0.0 : [   1] amik\weapons\flame\mg42out
+*  0.0 : [   1] amik\weapons\flame\trace
+*  0.0 : [   1] amik\weapons\flame\trace_01
+*  0.0 : [   1] amik\weapons\flame\trail
+*  0.0 : [   1] amik\weapons\flash_01
+*  0.0 : [   1] amik\weapons\flash_02
+*  0.0 : [   1] amik\weapons\flash_04
+*  0.0 : [   1] amik\weapons\flash_05
+*  0.0 : [   1] amik\weapons\grishik\357mag
+*  0.0 : [   1] amik\weapons\grishik\45
+*  0.0 : [   1] amik\weapons\grishik\50_ae
+*  0.0 : [   1] amik\weapons\grishik\5x45x39
+*  0.0 : [   1] amik\weapons\grishik\5x45x39_00
+*  0.0 : [   1] amik\weapons\grishik\5x45x39_01
+*  0.0 : [   1] amik\weapons\grishik\5x56x45
+*  0.0 : [   1] amik\weapons\grishik\5x56x45_00
+*  0.0 : [   1] amik\weapons\grishik\5x7x28
+*  0.0 : [   1] amik\weapons\grishik\6x5x50
+*  0.0 : [   1] amik\weapons\grishik\7x62x25_0
+*  0.0 : [   1] amik\weapons\grishik\7x62x25_1
+*  0.0 : [   1] amik\weapons\grishik\7x62x25_2
+*  0.0 : [   1] amik\weapons\grishik\7x62x25_3
+*  0.0 : [   1] amik\weapons\grishik\7x62x25_4
+*  0.0 : [   1] amik\weapons\grishik\7x62x39_00
+*  0.0 : [   1] amik\weapons\grishik\7x62x39_01
+*  0.0 : [   1] amik\weapons\grishik\7x62x39_02
+*  0.0 : [   1] amik\weapons\grishik\7x62x39_03
+*  0.0 : [   1] amik\weapons\grishik\7x62x51_1
+*  0.0 : [   1] amik\weapons\grishik\7x62x51_2
+*  0.0 : [   1] amik\weapons\grishik\7x62x54
+*  0.0 : [   1] amik\weapons\grishik\7x7x57
+*  0.0 : [   1] amik\weapons\grishik\7x92x57
+*  0.0 : [   1] amik\weapons\grishik\9x18_1
+*  0.0 : [   1] amik\weapons\grishik\9x18_2
+*  0.0 : [   1] amik\weapons\grishik\9x18_3
+*  0.0 : [   1] amik\weapons\grishik\9x39
+*  0.0 : [   1] amik\weapons\mg42out
+*  0.0 : [   1] amik\weapons\shells_12x70
+*  0.0 : [   1] amik\weapons\shells_ak
+*  0.0 : [   1] amik\weapons\shells_ak_01
+*  0.0 : [   1] amik\weapons\smokeshoot_0
+*  0.0 : [   1] amik\weapons\smokeshoot_1
+*  0.0 : [   1] amik\weapons\trace
+*  0.0 : [   1] amik\weapons\trace_01
+*  0.0 : [   1] fozest\fire_spark_04
+*  0.0 : [   1] fozest\small_fire_looped10x4
+*  0.0 : [   1] fozest\small_fire_looped10x4_dist
+*  0.0 : [   1] fozest\smoke02
+*  0.0 : [   1] fx\fx_flare1
+*  0.0 : [   1] fx\fx_gradien2
+*  0.0 : [   1] fx\fx_gradient
+*  0.0 : [   1] fx\fx_gradient1
+*  0.0 : [   1] fx\fx_gradient_02
+*  0.0 : [   1] fx\fx_lightning
+*  0.0 : [   1] fx\fx_moon
+*  0.0 : [   1] fx\fx_moon_full_clear
+*  0.0 : [   1] fx\fx_moon_full_cloudy
+*  0.0 : [   1] fx\fx_moon_full_verycloudy
+*  0.0 : [   1] fx\fx_rain
+*  0.0 : [   1] fx\fx_rainsplash1
+*  0.0 : [   1] fx\fx_sun
+*  0.0 : [   1] fx\fx_sun2
+*  0.0 : [   1] fx\fx_sun_cloudy_dark
+*  0.0 : [   1] fx\fx_sun_fog
+*  0.0 : [   1] fx\fx_sun_fog3
+*  0.0 : [   1] fx\fx_sun_fog4
+*  0.0 : [   1] fx\fx_sun_fog4_sun
+*  0.0 : [   1] fx\fx_sun_gradient
+*  0.0 : [   1] fx\fx_sun_gradient_day_clear
+*  0.0 : [   1] fx\fx_sun_halo
+*  0.0 : [   1] fx\fx_sun_morning
+*  0.0 : [   1] fx\fx_sun_rise
+*  0.0 : [   1] fx\fx_sunset
+*  0.0 : [   1] fx\fx_thunderbolts_gradient
+*  0.0 : [   1] fx\fx_thunderbolts_gradient_surge
+*  0.0 : [   1] fx\fx_volumefog1
+*  0.0 : [   1] ghost_particles\dist\distortion_default
+*  0.0 : [   1] ghost_particles\eft_style\eft_flame
+*  0.0 : [   1] ghost_particles\eft_style\empty
+*  0.0 : [   1] ghost_particles\eft_style\f4_sparks
+*  0.0 : [   1] ghost_particles\eft_style\smoke01
+*  0.0 : [   1] ghost_particles\eft_style\smoke02
+*  0.0 : [   1] ghost_particles\glow\glow01
+*  0.0 : [   1] ghost_particles\shells\r_pop\12ga
+*  0.0 : [   1] ghost_particles\shells\r_pop\545x39
+*  0.0 : [   1] ghost_particles\shells\r_pop\9x19
+*  0.0 : [   1] ghost_particles\shells\r_pop\9x39
+*  0.0 : [   1] ghost_particles\shells\shell_762x39
+*  0.0 : [   1] ghost_particles\shells\shell_9x18
+*  0.0 : [   1] ghost_particles\smoke\generic_smoke_white_00
+*  0.0 : [   1] ghost_particles\smoke\smoke_loop_5x5
+*  0.0 : [   1] glow\glow_04
+*  0.0 : [   1] glow\glow_blue
+*  0.0 : [   1] glow\glow_fire1
+*  0.0 : [   1] glow\glow_fire1_soc
+*  0.0 : [   1] glow\glow_orange
+*  0.0 : [   1] glow\glow_orange2
+*  0.0 : [   1] glow\glow_orange_bright
+*  0.0 : [   1] glow\glow_rays
+*  0.0 : [   1] glow\glow_white
+*  0.0 : [   1] glow\glow_yellow
+*  0.0 : [   1] new_pfx\explosions\eplosion04_dxt5
+*  0.0 : [   1] new_pfx\smoke_animated_2
+*  0.0 : [   1] new_pfx\wblood_4
+*  0.0 : [   1] new_pfx\wblood_6
+*  0.0 : [   1] pfx\gunparts
+*  0.0 : [   1] pfx\pfx_ani-explosion-02
+*  0.0 : [   1] pfx\pfx_ani-explosion-02-b-a
+*  0.0 : [   1] pfx\pfx_ani-explosion-02a
+*  0.0 : [   1] pfx\pfx_ani-fire01
+*  0.0 : [   1] pfx\pfx_ani-smoke-01
+*  0.0 : [   1] pfx\pfx_anomaly_1
+*  0.0 : [   1] pfx\pfx_anomaly_16
+*  0.0 : [   1] pfx\pfx_anomaly_17
+*  0.0 : [   1] pfx\pfx_anomaly_18
+*  0.0 : [   1] pfx\pfx_anomaly_19
+*  0.0 : [   1] pfx\pfx_anomaly_2
+*  0.0 : [   1] pfx\pfx_anomaly_21
+*  0.0 : [   1] pfx\pfx_anomaly_23
+*  0.0 : [   1] pfx\pfx_anomaly_2_green
+*  0.0 : [   1] pfx\pfx_anomaly_3
+*  0.0 : [   1] pfx\pfx_anomaly_4
+*  0.0 : [   1] pfx\pfx_anomaly_5
+*  0.0 : [   1] pfx\pfx_anomaly_6
+*  0.0 : [   1] pfx\pfx_anomaly_7
+*  0.0 : [   1] pfx\pfx_anomaly_8
+*  0.0 : [   1] pfx\pfx_anomaly_88
+*  0.0 : [   1] pfx\pfx_anomaly_9
+*  0.0 : [   1] pfx\pfx_bloodsplash1
+*  0.0 : [   1] pfx\pfx_bloodsplash2
+*  0.0 : [   1] pfx\pfx_blurry_cloud
+*  0.0 : [   1] pfx\pfx_brick
+*  0.0 : [   1] pfx\pfx_bubble
+*  0.0 : [   1] pfx\pfx_bubble_1
+*  0.0 : [   1] pfx\pfx_bubble_water
+*  0.0 : [   1] pfx\pfx_cc_lighting_grad2
+*  0.0 : [   1] pfx\pfx_cc_lightings
+*  0.0 : [   1] pfx\pfx_concretedebris_01
+*  0.0 : [   1] pfx\pfx_concretepuffs_01
+*  0.0 : [   1] pfx\pfx_dist2
+*  0.0 : [   1] pfx\pfx_dist2inv
+*  0.0 : [   1] pfx\pfx_dist3
+*  0.0 : [   1] pfx\pfx_dist4
+*  0.0 : [   1] pfx\pfx_dist7
+*  0.0 : [   1] pfx\pfx_dist8
+*  0.0 : [   1] pfx\pfx_dist9
+*  0.0 : [   1] pfx\pfx_dist_lens_base
+*  0.0 : [   1] pfx\pfx_dist_teleport
+*  0.0 : [   1] pfx\pfx_distort_anomaly
+*  0.0 : [   1] pfx\pfx_distortion
+*  0.0 : [   1] pfx\pfx_electrostatic
+*  0.0 : [   1] pfx\pfx_expl_01
+*  0.0 : [   1] pfx\pfx_explotions_2
+*  0.0 : [   1] pfx\pfx_explotions_3
+*  0.0 : [   1] pfx\pfx_explotions_4
+*  0.0 : [   1] pfx\pfx_explotions_smoke
+*  0.0 : [   1] pfx\pfx_explotions_smoke_benzine
+*  0.0 : [   1] pfx\pfx_flame
+*  0.0 : [   1] pfx\pfx_flame_01
+*  0.0 : [   1] pfx\pfx_flamefx_01
+*  0.0 : [   1] pfx\pfx_flash_01
+*  0.0 : [   1] pfx\pfx_flash_02
+*  0.0 : [   1] pfx\pfx_flash_05
+*  0.0 : [   1] pfx\pfx_flash_07
+*  0.0 : [   1] pfx\pfx_flash_08
+*  0.0 : [   1] pfx\pfx_g-smoke-01
+*  0.0 : [   1] pfx\pfx_gologramma
+*  0.0 : [   1] pfx\pfx_gradient
+*  0.0 : [   1] pfx\pfx_gradient1
+*  0.0 : [   1] pfx\pfx_leaves_01
+*  0.0 : [   1] pfx\pfx_leaves_02
+*  0.0 : [   1] pfx\pfx_light
+*  0.0 : [   1] pfx\pfx_light1
+*  0.0 : [   1] pfx\pfx_light3
+*  0.0 : [   1] pfx\pfx_light4
+*  0.0 : [   1] pfx\pfx_lighting_stancia_01
+*  0.0 : [   1] pfx\pfx_lighting_stancia_02
+*  0.0 : [   1] pfx\pfx_lightning_01
+*  0.0 : [   1] pfx\pfx_lightning_02
+*  0.0 : [   1] pfx\pfx_ligth_6
+*  0.0 : [   1] pfx\pfx_plasma
+*  0.0 : [   1] pfx\pfx_rain
+*  0.0 : [   1] pfx\pfx_rez_electra2
+*  0.0 : [   1] pfx\pfx_rez_electra3
+*  0.0 : [   1] pfx\pfx_shells1
+*  0.0 : [   1] pfx\pfx_shells2
+*  0.0 : [   1] pfx\pfx_shells_green
+*  0.0 : [   1] pfx\pfx_shells_pisto1
+*  0.0 : [   1] pfx\pfx_shells_pistol
+*  0.0 : [   1] pfx\pfx_skinsplash1
+*  0.0 : [   1] pfx\pfx_smoke_a
+*  0.0 : [   1] pfx\pfx_smoke_b
+*  0.0 : [   1] pfx\pfx_smoke_c
+*  0.0 : [   1] pfx\pfx_smoke_f
+*  0.0 : [   1] pfx\pfx_smoke_g
+*  0.0 : [   1] pfx\pfx_smoke_n
+*  0.0 : [   1] pfx\pfx_smoke_o
+*  0.0 : [   1] pfx\pfx_smoke_o2
+*  0.0 : [   1] pfx\pfx_smoke_o3
+*  0.0 : [   1] pfx\pfx_smoke_p
+*  0.0 : [   1] pfx\pfx_smokepuffs1
+*  0.0 : [   1] pfx\pfx_smokepuffs2
+*  0.0 : [   1] pfx\pfx_spark_01
+*  0.0 : [   1] pfx\pfx_spark_02
+*  0.0 : [   1] pfx\pfx_sparks
+*  0.0 : [   1] pfx\pfx_sparks1
+*  0.0 : [   1] pfx\pfx_sparks2
+*  0.0 : [   1] pfx\pfx_specks
+*  0.0 : [   1] pfx\pfx_specks_poison
+*  0.0 : [   1] pfx\pfx_spikey_star
+*  0.0 : [   1] pfx\pfx_splash3
+*  0.0 : [   1] pfx\pfx_splash_01
+*  0.0 : [   1] pfx\pfx_splash_02
+*  0.0 : [   1] pfx\pfx_step_blood
+*  0.0 : [   1] pfx\pfx_stonedebris1
+*  0.0 : [   1] pfx\pfx_stonedebris2
+*  0.0 : [   1] pfx\pfx_synus
+*  0.0 : [   1] pfx\pfx_teleport
+*  0.0 : [   1] pfx\pfx_test_textures
+*  0.0 : [   1] pfx\pfx_vehglassdebris_01
+*  0.0 : [   1] pfx\pfx_vehmetaldebris_01
+*  0.0 : [   1] pfx\pfx_water_wave
+*  0.0 : [   1] pfx\pfx_woodchips1
+*  0.0 : [   1] pfx\pfx_woodchips3
+*  0.0 : [   1] pfx\r_pop\shells\12ga
+*  0.0 : [   1] pfx\r_pop\shells\45acp
+*  0.0 : [   1] pfx\r_pop\shells\545x39
+*  0.0 : [   1] pfx\r_pop\shells\556x45
+*  0.0 : [   1] pfx\r_pop\shells\762x39
+*  0.0 : [   1] pfx\r_pop\shells\762x51
+*  0.0 : [   1] pfx\r_pop\shells\762x54
+*  0.0 : [   1] pfx\r_pop\shells\9x18
+*  0.0 : [   1] pfx\r_pop\shells\9x19
+*  0.0 : [   1] pfx\r_pop\shells\9x39
+*  0.0 : [   1] pfx\r_pop\shells\fake_shells
+*  0.0 : [   1] pfx\snowo
+*  0.0 : [   1] prop\prop_fake_bed_fireplace
+*  0.0 : [   1] prop\prop_provod_02
+*  0.0 : [   1] shoker_mod\explosions\explosion_smoke01
+*  0.0 : [   1] shoker_mod\explosions\final_expl
+*  0.0 : [   1] shoker_mod\explosions\firesmokeparticle
+*  0.0 : [   1] shoker_mod\pfx\pfx_ak_shells_1
+*  0.0 : [   1] shoker_mod\pfx\pfx_shells1
+*  0.0 : [   1] shoker_mod\pfx\pfx_shells2
+*  0.0 : [   1] shoker_mod\pfx\pfx_shells3
+*  0.0 : [   1] shoker_mod\pfx\pfx_smoke_1
+*  0.0 : [   5] sky\af1_foggy\06-00
+*  0.0 : [   5] sky\af1_foggy\06-00#small
+*  0.0 : [   8] sky\af1_foggy\08-00
+*  0.0 : [   8] sky\af1_foggy\08-00#small
+*  0.0 : [   1] sky\af1_foggy\09-00
+*  0.0 : [   1] sky\af1_foggy\09-00#small
+*  0.0 : [   1] sky\af1_foggy\11-00
+*  0.0 : [   1] sky\af1_foggy\11-00#small
+*  0.0 : [   6] sky\af1_foggy\13-00
+*  0.0 : [   6] sky\af1_foggy\13-00#small
+*  0.0 : [   6] sky\af3_a_clear\04-30
+*  0.0 : [   6] sky\af3_a_clear\04-30#small
+*  0.0 : [   8] sky\af3_a_clear\05-00
+*  0.0 : [   8] sky\af3_a_clear\05-00#small
+*  0.0 : [   2] sky\af3_a_clear\05-30
+*  0.0 : [   2] sky\af3_a_clear\05-30#small
+*  0.0 : [   7] sky\af3_a_clear\06-00
+*  0.0 : [   7] sky\af3_a_clear\06-00#small
+*  0.0 : [   5] sky\af3_a_clear\07-00
+*  0.0 : [   5] sky\af3_a_clear\07-00#small
+*  0.0 : [   5] sky\af3_a_clear\08-00
+*  0.0 : [   5] sky\af3_a_clear\08-00#small
+*  0.0 : [   5] sky\af3_a_clear\09-00
+*  0.0 : [   5] sky\af3_a_clear\09-00#small
+*  0.0 : [   5] sky\af3_a_clear\10-00
+*  0.0 : [   5] sky\af3_a_clear\10-00#small
+*  0.0 : [   5] sky\af3_a_clear\11-00
+*  0.0 : [   5] sky\af3_a_clear\11-00#small
+*  0.0 : [   5] sky\af3_a_clear\12-00
+*  0.0 : [   5] sky\af3_a_clear\12-00#small
+*  0.0 : [   5] sky\af3_a_clear\13-00
+*  0.0 : [   5] sky\af3_a_clear\13-00#small
+*  0.0 : [   5] sky\af3_a_clear\14-00
+*  0.0 : [   5] sky\af3_a_clear\14-00#small
+*  0.0 : [   5] sky\af3_a_clear\15-00
+*  0.0 : [   5] sky\af3_a_clear\15-00#small
+*  0.0 : [   5] sky\af3_a_clear\16-00
+*  0.0 : [   5] sky\af3_a_clear\16-00#small
+*  0.0 : [   5] sky\af3_a_clear\17-00
+*  0.0 : [   5] sky\af3_a_clear\17-00#small
+*  0.0 : [   5] sky\af3_a_clear\18-00
+*  0.0 : [   5] sky\af3_a_clear\18-00#small
+*  0.0 : [   5] sky\af3_a_clear\19-00
+*  0.0 : [   5] sky\af3_a_clear\19-00#small
+*  0.0 : [   6] sky\af3_a_clear\20-00
+*  0.0 : [   6] sky\af3_a_clear\20-00#small
+*  0.0 : [   5] sky\af3_a_clear\20-30
+*  0.0 : [   5] sky\af3_a_clear\20-30#small
+*  0.0 : [   5] sky\af3_a_clear\21-00
+*  0.0 : [   5] sky\af3_a_clear\21-00#small
+*  0.0 : [   3] sky\af3_a_cloudy\05-00
+*  0.0 : [   3] sky\af3_a_cloudy\05-00#small
+*  0.0 : [   5] sky\af3_a_cloudy\06-00
+*  0.0 : [   5] sky\af3_a_cloudy\06-00#small
+*  0.0 : [   6] sky\af3_a_cloudy\07-00
+*  0.0 : [   6] sky\af3_a_cloudy\07-00#small
+*  0.0 : [   6] sky\af3_a_cloudy\08-00
+*  0.0 : [   6] sky\af3_a_cloudy\08-00#small
+*  0.0 : [  28] sky\af3_a_cloudy\09-00
+*  0.0 : [  28] sky\af3_a_cloudy\09-00#small
+*  0.0 : [   7] sky\af3_a_cloudy\10-00
+*  0.0 : [   7] sky\af3_a_cloudy\10-00#small
+*  0.0 : [   9] sky\af3_a_cloudy\11-00
+*  0.0 : [   9] sky\af3_a_cloudy\11-00#small
+*  0.0 : [   5] sky\af3_a_cloudy\12-00
+*  0.0 : [   5] sky\af3_a_cloudy\12-00#small
+*  0.0 : [   8] sky\af3_a_cloudy\13-00
+*  0.0 : [   8] sky\af3_a_cloudy\13-00#small
+*  0.0 : [   8] sky\af3_a_cloudy\14-00
+*  0.0 : [   8] sky\af3_a_cloudy\14-00#small
+*  0.0 : [   7] sky\af3_a_cloudy\15-00
+*  0.0 : [   7] sky\af3_a_cloudy\15-00#small
+*  0.0 : [   7] sky\af3_a_cloudy\16-00
+*  0.0 : [   7] sky\af3_a_cloudy\16-00#small
+*  0.0 : [   9] sky\af3_a_cloudy\17-00
+*  0.0 : [   9] sky\af3_a_cloudy\17-00#small
+*  0.0 : [  12] sky\af3_a_cloudy\18-00
+*  0.0 : [  12] sky\af3_a_cloudy\18-00#small
+*  0.0 : [   3] sky\af3_a_cloudy\19-00
+*  0.0 : [   3] sky\af3_a_cloudy\19-00#small
+*  0.0 : [   7] sky\af3_a_cloudy\20-00
+*  0.0 : [   7] sky\af3_a_cloudy\20-00#small
+*  0.0 : [   2] sky\af3_a_partly\05-00
+*  0.0 : [   2] sky\af3_a_partly\05-00#small
+*  0.0 : [   3] sky\af3_a_partly\05-30
+*  0.0 : [   3] sky\af3_a_partly\05-30#small
+*  0.0 : [   4] sky\af3_a_partly\06-00
+*  0.0 : [   4] sky\af3_a_partly\06-00#small
+*  0.0 : [   2] sky\af3_a_partly\07-00
+*  0.0 : [   2] sky\af3_a_partly\07-00#small
+*  0.0 : [   2] sky\af3_a_partly\08-00
+*  0.0 : [   2] sky\af3_a_partly\08-00#small
+*  0.0 : [   1] sky\af3_a_partly\09-00
+*  0.0 : [   1] sky\af3_a_partly\09-00#small
+*  0.0 : [   1] sky\af3_a_partly\10-00
+*  0.0 : [   1] sky\af3_a_partly\10-00#small
+*  0.0 : [   3] sky\af3_a_partly\11-00
+*  0.0 : [   3] sky\af3_a_partly\11-00#small
+*  0.0 : [   5] sky\af3_a_partly\13-00
+*  0.0 : [   5] sky\af3_a_partly\13-00#small
+*  0.0 : [   1] sky\af3_a_partly\14-00
+*  0.0 : [   1] sky\af3_a_partly\14-00#small
+*  0.0 : [  25] sky\af3_a_partly\16-00
+*  0.0 : [  25] sky\af3_a_partly\16-00#small
+*  0.0 : [   3] sky\af3_a_partly\17-00
+*  0.0 : [   3] sky\af3_a_partly\17-00#small
+*  0.0 : [   2] sky\af3_a_partly\18-00
+*  0.0 : [   2] sky\af3_a_partly\18-00#small
+*  0.0 : [   3] sky\af3_a_partly\19-00
+*  0.0 : [   3] sky\af3_a_partly\19-00#small
+*  0.0 : [   4] sky\af3_a_partly\20-00
+*  0.0 : [   4] sky\af3_a_partly\20-00#small
+*  0.0 : [   1] sky\af3_a_partly\20-30
+*  0.0 : [   1] sky\af3_a_partly\20-30#small
+*  0.0 : [   2] sky\af3_a_partly\21-30
+*  0.0 : [   2] sky\af3_a_partly\21-30#small
+*  0.0 : [   6] sky\af3_blowout\blowout1
+*  0.0 : [   6] sky\af3_blowout\blowout1#small
+*  0.0 : [   2] sky\af3_blowout\blowout1_1
+*  0.0 : [   2] sky\af3_blowout\blowout1_1#small
+*  0.0 : [   1] sky\af3_blowout\blowout2
+*  0.0 : [   1] sky\af3_blowout\blowout2#small
+*  0.0 : [   1] sky\af3_blowout\blowout2_night
+*  0.0 : [   1] sky\af3_blowout\blowout2_night#small
+*  0.0 : [   3] sky\af3_blowout\blowout3
+*  0.0 : [   3] sky\af3_blowout\blowout3#small
+*  0.0 : [   2] sky\af3_blowout\blowout3_1
+*  0.0 : [   2] sky\af3_blowout\blowout3_1#small
+*  0.0 : [   2] sky\af3_blowout\blowout3_1_night
+*  0.0 : [   2] sky\af3_blowout\blowout3_1_night#small
+*  0.0 : [   3] sky\af3_blowout\blowout3_2
+*  0.0 : [   3] sky\af3_blowout\blowout3_2#small
+*  0.0 : [   2] sky\af3_blowout\blowout3_2_night
+*  0.0 : [   2] sky\af3_blowout\blowout3_2_night#small
+*  0.0 : [   2] sky\af3_blowout\blowout3_3
+*  0.0 : [   2] sky\af3_blowout\blowout3_3#small
+*  0.0 : [   2] sky\af3_blowout\blowout3_3_night
+*  0.0 : [   2] sky\af3_blowout\blowout3_3_night#small
+*  0.0 : [   1] sky\af3_blowout\blowout3_night
+*  0.0 : [   1] sky\af3_blowout\blowout3_night#small
+*  0.0 : [   1] sky\af3_blowout\blowout4
+*  0.0 : [   1] sky\af3_blowout\blowout4#small
+*  0.0 : [   3] sky\af3_blowout\blowout4_1
+*  0.0 : [   3] sky\af3_blowout\blowout4_1#small
+*  0.0 : [   3] sky\af3_blowout\blowout4_1_night
+*  0.0 : [   3] sky\af3_blowout\blowout4_1_night#small
+*  0.0 : [   1] sky\af3_blowout\blowout4_night
+*  0.0 : [   1] sky\af3_blowout\blowout4_night#small
+*  0.0 : [   1] sky\af3_blowout\blowout5
+*  0.0 : [   1] sky\af3_blowout\blowout5#small
+*  0.0 : [   1] sky\af3_blowout\blowout5_night
+*  0.0 : [   1] sky\af3_blowout\blowout5_night#small
+*  0.0 : [   7] sky\af3_blowout\blowout5psi
+*  0.0 : [   7] sky\af3_blowout\blowout5psi#small
+*  0.0 : [   7] sky\af3_blowout\blowout5psi_night
+*  0.0 : [   7] sky\af3_blowout\blowout5psi_night#small
+*  0.0 : [   1] sky\af3_blowout\blowout6
+*  0.0 : [   1] sky\af3_blowout\blowout6#small
+*  0.0 : [   1] sky\af3_blowout\blowout6_night
+*  0.0 : [   1] sky\af3_blowout\blowout6_night#small
+*  0.0 : [   3] sky\af3_blowout\blowout7
+*  0.0 : [   3] sky\af3_blowout\blowout7#small
+*  0.0 : [   4] sky\af3_blowout\blowout7_night
+*  0.0 : [   4] sky\af3_blowout\blowout7_night#small
+*  0.0 : [   7] sky\af3_foggy\07-00
+*  0.0 : [   7] sky\af3_foggy\07-00#small
+*  0.0 : [   2] sky\af3_foggy\09-00
+*  0.0 : [   2] sky\af3_foggy\09-00#small
+*  0.0 : [  58] sky\af3_foggy\10-00
+*  0.0 : [  58] sky\af3_foggy\10-00#small
+*  0.0 : [   3] sky\af3_foggy\11-00
+*  0.0 : [   3] sky\af3_foggy\11-00#small
+*  0.0 : [   6] sky\af3_foggy\17-00
+*  0.0 : [   6] sky\af3_foggy\17-00#small
+*  0.0 : [   1] sky\af3_foggy\18-00
+*  0.0 : [   1] sky\af3_foggy\18-00#small
+*  0.0 : [   6] sky\af3_rainy\07-00
+*  0.0 : [   6] sky\af3_rainy\07-00#small
+*  0.0 : [   6] sky\af3_rainy\09-00_19-00
+*  0.0 : [   6] sky\af3_rainy\09-00_19-00#small
+*  0.0 : [   1] sky\af3_rainy\13-00
+*  0.0 : [   1] sky\af3_rainy\13-00#small
+*  0.0 : [   3] sky\af3_rainy\15-00
+*  0.0 : [   3] sky\af3_rainy\15-00#small
+*  0.0 : [   2] sky\af3_rainy\16-00
+*  0.0 : [   2] sky\af3_rainy\16-00#small
+*  0.0 : [   6] sky\af3_rainy\20-00
+*  0.0 : [   6] sky\af3_rainy\20-00#small
+*  0.0 : [   5] sky\sky_oblaka
+*  0.0 : [  40] sky\skygod_night\cloudy_00-00
+*  0.0 : [  40] sky\skygod_night\cloudy_00-00#small
+*  0.0 : [  49] sky\skygod_night\foggy_00-00
+*  0.0 : [  49] sky\skygod_night\foggy_00-00#small
+*  0.0 : [  37] sky\swtc_clear\00-00-fm
+*  0.0 : [  37] sky\swtc_clear\00-00-fm#small
+*  0.0 : [  26] sky\swtc_clear\01-00-fm
+*  0.0 : [  26] sky\swtc_clear\01-00-fm#small
+*  0.0 : [   1] sky\swtc_clear\02-00-fm
+*  0.0 : [   1] sky\swtc_clear\02-00-fm#small
+*  0.0 : [   1] sky\swtc_clear\03-00-fm
+*  0.0 : [   1] sky\swtc_clear\03-00-fm#small
+*  0.0 : [   1] sky\swtc_clear\04-00-fm
+*  0.0 : [   1] sky\swtc_clear\04-00-fm#small
+*  0.0 : [   1] sky\swtc_clear\04-30
+*  0.0 : [   1] sky\swtc_clear\04-30#small
+*  0.0 : [   2] sky\swtc_clear\05-00
+*  0.0 : [   2] sky\swtc_clear\05-00#small
+*  0.0 : [   3] sky\swtc_clear\06-00
+*  0.0 : [   3] sky\swtc_clear\06-00#small
+*  0.0 : [   1] sky\swtc_clear\06-30
+*  0.0 : [   1] sky\swtc_clear\06-30#small
+*  0.0 : [   1] sky\swtc_clear\07-00
+*  0.0 : [   1] sky\swtc_clear\07-00#small
+*  0.0 : [   2] sky\swtc_clear\08-00
+*  0.0 : [   2] sky\swtc_clear\08-00#small
+*  0.0 : [   3] sky\swtc_clear\09-00
+*  0.0 : [   3] sky\swtc_clear\09-00#small
+*  0.0 : [   2] sky\swtc_clear\10-00
+*  0.0 : [   2] sky\swtc_clear\10-00#small
+*  0.0 : [   2] sky\swtc_clear\11-00
+*  0.0 : [   2] sky\swtc_clear\11-00#small
+*  0.0 : [   3] sky\swtc_clear\12-00
+*  0.0 : [   3] sky\swtc_clear\12-00#small
+*  0.0 : [   2] sky\swtc_clear\13-00
+*  0.0 : [   2] sky\swtc_clear\13-00#small
+*  0.0 : [   2] sky\swtc_clear\14-00
+*  0.0 : [   2] sky\swtc_clear\14-00#small
+*  0.0 : [   2] sky\swtc_clear\15-00
+*  0.0 : [   2] sky\swtc_clear\15-00#small
+*  0.0 : [   2] sky\swtc_clear\16-00
+*  0.0 : [   2] sky\swtc_clear\16-00#small
+*  0.0 : [   2] sky\swtc_clear\17-00
+*  0.0 : [   2] sky\swtc_clear\17-00#small
+*  0.0 : [   2] sky\swtc_clear\18-00
+*  0.0 : [   2] sky\swtc_clear\18-00#small
+*  0.0 : [   3] sky\swtc_clear\19-00
+*  0.0 : [   3] sky\swtc_clear\19-00#small
+*  0.0 : [   2] sky\swtc_clear\20-00
+*  0.0 : [   2] sky\swtc_clear\20-00#small
+*  0.0 : [   1] sky\swtc_clear\20-30
+*  0.0 : [   1] sky\swtc_clear\20-30#small
+*  0.0 : [   2] sky\swtc_clear\21-00
+*  0.0 : [   2] sky\swtc_clear\21-00#small
+*  0.0 : [   1] sky\swtc_clear\22-00-fm
+*  0.0 : [   1] sky\swtc_clear\22-00-fm#small
+*  0.0 : [   1] sky\swtc_clear\23-00-fm
+*  0.0 : [   1] sky\swtc_clear\23-00-fm#small
+*  0.0 : [   1] sky\swtc_clear_alt\00-00
+*  0.0 : [   1] sky\swtc_clear_alt\00-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\01-00
+*  0.0 : [   1] sky\swtc_clear_alt\01-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\02-00
+*  0.0 : [   1] sky\swtc_clear_alt\02-00#small
+*  0.0 : [  34] sky\swtc_clear_alt\03-00
+*  0.0 : [  34] sky\swtc_clear_alt\03-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\04-00
+*  0.0 : [   2] sky\swtc_clear_alt\04-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\05-00
+*  0.0 : [   1] sky\swtc_clear_alt\05-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\06-00
+*  0.0 : [   2] sky\swtc_clear_alt\06-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\07-00
+*  0.0 : [   1] sky\swtc_clear_alt\07-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\08-00
+*  0.0 : [   1] sky\swtc_clear_alt\08-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\10-00
+*  0.0 : [   2] sky\swtc_clear_alt\10-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\11-00
+*  0.0 : [   1] sky\swtc_clear_alt\11-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\13-00
+*  0.0 : [   2] sky\swtc_clear_alt\13-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\14-00
+*  0.0 : [   1] sky\swtc_clear_alt\14-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\15-00
+*  0.0 : [   2] sky\swtc_clear_alt\15-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\17-00
+*  0.0 : [   1] sky\swtc_clear_alt\17-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\18-00
+*  0.0 : [   1] sky\swtc_clear_alt\18-00#small
+*  0.0 : [   1] sky\swtc_clear_alt\19-00
+*  0.0 : [   1] sky\swtc_clear_alt\19-00#small
+*  0.0 : [   2] sky\swtc_clear_alt\20-00
+*  0.0 : [   2] sky\swtc_clear_alt\20-00#small
+*  0.0 : [   3] sky\swtc_clear_alt\20-30
+*  0.0 : [   3] sky\swtc_clear_alt\20-30#small
+*  0.0 : [   3] sky\swtc_clear_alt\23-00
+*  0.0 : [   3] sky\swtc_clear_alt\23-00#small
+*  0.0 : [   1] sky\swtc_cloudy_light\06-00-cloudy-dark
+*  0.0 : [   1] sky\swtc_cloudy_light\06-00-cloudy-dark#small
+*  0.0 : [   1] sky\swtc_cloudy_light\17-00-cloudy-light
+*  0.0 : [   1] sky\swtc_cloudy_light\17-00-cloudy-light#small
+*  0.0 : [   3] sky\swtc_cloudy_light\19-00-cloudy-light-rain
+*  0.0 : [   3] sky\swtc_cloudy_light\19-00-cloudy-light-rain#small
+*  0.0 : [   1] sky\swtc_cloudy_light\20-30-cloudy-light
+*  0.0 : [   1] sky\swtc_cloudy_light\20-30-cloudy-light#small
+*  0.0 : [   2] sky\swtc_dark\05-00-storm
+*  0.0 : [   2] sky\swtc_dark\05-00-storm#small
+*  0.0 : [   1] sky\swtc_dark\06-00-cloudy-dark
+*  0.0 : [   1] sky\swtc_dark\06-00-cloudy-dark#small
+*  0.0 : [   1] sky\swtc_dark\07-00-cloudy-light-rain
+*  0.0 : [   1] sky\swtc_dark\07-00-cloudy-light-rain#small
+*  0.0 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain
+*  0.0 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain#small
+*  0.0 : [   1] sky\swtc_dark\10-00-cloudy-light-rain
+*  0.0 : [   1] sky\swtc_dark\10-00-cloudy-light-rain#small
+*  0.0 : [   1] sky\swtc_dark\11-00-storm
+*  0.0 : [   1] sky\swtc_dark\11-00-storm#small
+*  0.0 : [   3] sky\swtc_dark\13-00-cloudy-dark
+*  0.0 : [   3] sky\swtc_dark\13-00-cloudy-dark#small
+*  0.0 : [   1] sky\swtc_dark\15-00-storm
+*  0.0 : [   1] sky\swtc_dark\15-00-storm#small
+*  0.0 : [   1] sky\swtc_dark\16-00-storm
+*  0.0 : [   1] sky\swtc_dark\16-00-storm#small
+*  0.0 : [   1] sky\swtc_dark\17-00-storm
+*  0.0 : [   1] sky\swtc_dark\17-00-storm#small
+*  0.0 : [   1] sky\swtc_dark\18-00-cloudy-light-rain
+*  0.0 : [   1] sky\swtc_dark\18-00-cloudy-light-rain#small
+*  0.0 : [   3] sky\swtc_dark\19-00-storm
+*  0.0 : [   3] sky\swtc_dark\19-00-storm#small
+*  0.0 : [   2] sky\swtc_dark\20-00-storm
+*  0.0 : [   2] sky\swtc_dark\20-00-storm#small
+*  0.0 : [   1] sky\swtc_dark\21-00-storm
+*  0.0 : [   1] sky\swtc_dark\21-00-storm#small
+*  0.0 : [   3] sky\swtc_storm\08-00-storm
+*  0.0 : [   3] sky\swtc_storm\08-00-storm#small
+*  0.0 : [   2] sky\swtc_storm\09-00-storm
+*  0.0 : [   2] sky\swtc_storm\09-00-storm#small
+*  0.0 : [   5] sky\swtc_storm\10-00-storm
+*  0.0 : [   5] sky\swtc_storm\10-00-storm#small
+*  0.0 : [   1] sky\swtc_storm\14-00-storm
+*  0.0 : [   1] sky\swtc_storm\14-00-storm#small
+*  0.0 : [   3] sky\swtc_storm\15-00-storm
+*  0.0 : [   3] sky\swtc_storm\15-00-storm#small
+*  0.0 : [   1] sky\swtc_storm\17-00-storm
+*  0.0 : [   1] sky\swtc_storm\17-00-storm#small
+*  0.0 : [   1] sky\swtc_storm\20-00-storm
+*  0.0 : [   1] sky\swtc_storm\20-00-storm#small
+*  0.0 : [   1] ui\ui_actor_hint_wnd
+*  0.0 : [   1] ui\ui_actor_sleep_screen
+*  0.0 : [   1] wm\wm_blood_1
+*  0.0 : [   1] wm\wm_blood_1_1
+*  0.0 : [   1] wm\wm_blood_1_2
+*  0.0 : [   1] wm\wm_blood_1_3
+*  0.0 : [   1] wm\wm_blood_drop_4
+*  0.0 : [   1] wm\wm_bullet_asfalt_1
+*  0.0 : [   1] wm\wm_bullet_asfalt_2
+*  0.0 : [   1] wm\wm_bullet_asfalt_3
+*  0.0 : [   1] wm\wm_bullet_brick_1
+*  0.0 : [   1] wm\wm_bullet_brick_2
+*  0.0 : [   1] wm\wm_bullet_concrete
+*  0.0 : [   1] wm\wm_bullet_concrete_1
+*  0.0 : [   1] wm\wm_bullet_concrete_2
+*  0.0 : [   1] wm\wm_bullet_concrete_4
+*  0.0 : [   1] wm\wm_bullet_concrete_5
+*  0.0 : [   1] wm\wm_bullet_concrete_6
+*  0.0 : [   1] wm\wm_bullet_concrete_7
+*  0.0 : [   1] wm\wm_bullet_glass01
+*  0.0 : [   1] wm\wm_bullet_glass02
+*  0.0 : [   1] wm\wm_bullet_glass03
+*  0.0 : [   1] wm\wm_bullet_glass04
+*  0.0 : [   1] wm\wm_bullet_ground
+*  0.0 : [   1] wm\wm_bullet_ground_1
+*  0.0 : [   1] wm\wm_bullet_ground_2
+*  0.0 : [   1] wm\wm_bullet_metall_thik
+*  0.0 : [   1] wm\wm_bullet_metall_thik_1
+*  0.0 : [   1] wm\wm_bullet_metall_thik_2
+*  0.0 : [   1] wm\wm_bullet_metall_thik_3
+*  0.0 : [   1] wm\wm_bullet_metall_thin
+*  0.0 : [   1] wm\wm_bullet_metall_thin_1
+*  0.0 : [   1] wm\wm_bullet_metall_thin_2
+*  0.0 : [   1] wm\wm_bullet_metall_thin_3
+*  0.0 : [   1] wm\wm_bullet_metall_thin_4
+*  0.0 : [   1] wm\wm_bullet_wood
+*  0.0 : [   1] wm\wm_bullet_wood_1
+*  0.0 : [   1] wm\wm_bullet_wood_2
+*  0.0 : [   1] wm\wm_bullet_wood_3
+*  0.0 : [   1] wm\wm_bullet_wood_4
+*  0.0 : [   1] wm\wm_bullet_wood_5
+*  0.0 : [   1] wm\wm_bullet_wood_6
+*  0.0 : [   1] wm\wm_bullet_wood_7
+*  0.0 : [   1] wm\wm_bullet_wood_8
+*  0.0 : [   1] wm\wm_bullet_wood_9
+*  0.0 : [   1] wm\wm_grenade
+*  0.0 : [   1] wm\wm_knife_dead
+*  0.0 : [   1] wm\wm_knife_horiz
+*  0.0 : [   1] wm\wm_knife_horiz_blood
+*  0.0 : [   1] wm\wm_knife_horiz_blood1
+*  0.0 : [   1] wm\wm_knife_horiz_metal
+*  0.0 : [   1] wm\wm_knife_horiz_ston
+*  0.0 : [   1] wm\wm_knife_wood
+*  0.0 : [   1] wm\wm_knife_wood1
+*  0.0 : [   1] wm\wm_knife_wood2
+*  1.1 : [   1] ui\ui_empty
+*  8.1 : [   1] ui\ui_magnifier2
+*  9.5 : [   1] ui\moty2018
+*  9.5 : [   1] ui\moty2019
+*  9.5 : [   1] ui\moty2022
+* 10.7 : [   4] fx\fx_noise2
+* 16.1 : [   1] ui\ui_font_hud_01
+* 32.1 : [   1] ui\ui_font_arial_14_1600
+* 33.0 : [   1] ui\ui_ani_cursor
+* 64.1 : [   1] ui\ui_font_console_02
+* 64.1 : [   1] ui\ui_font_hud_02
+* 64.1 : [   1] ui\ui_font_letter_16_1600
+* 64.1 : [   1] ui\ui_font_letter_18_1600
+* 128.1 : [   1] ui\new_game\ui_new_game_factions
+* 128.1 : [   1] ui\ui_font_graff_19_1600
+* 128.1 : [   1] ui\ui_font_graff_22_1600
+* 256.1 : [   1] ui\ui_font_graff_32_1600
+* 256.1 : [   1] ui\ui_font_letter_25_1600
+* 512.1 : [   1] ui\ui_font_graff_50_1600
+* 1024.1 : [   1] ui\new_game\ui_new_game_back_t
+* 1024.1 : [   1] ui\new_game\ui_new_game_main
+* 1024.1 : [   1] ui\new_game\ui_new_game_maps_3
+* 1024.1 : [   1] ui\new_game\ui_new_game_popup
+* 1024.1 : [   1] ui\ui_actor_multiplayer_game_menu
+* 1024.1 : [   1] ui\ui_common
+* 2048.1 : [   1] ui\ui_actor_main_menu
+* 4096.1 : [   1] ui\ui_actor_main_menu_one
+* 4096.1 : [   1] ui\ui_actor_portrets
+* 4096.1 : [   1] ui\ui_options
+* 32768.1 : [   1] ui\ui_icon_equipment
+compiling shader model_def_hq
+compiling shader model_def_hq_4
+compiling shader model_def_lq
+compiling shader model_def_lq_4
+compiling shader add_point
+compiling shader model_def_point_4
+compiling shader add_spot
+compiling shader model_def_spot_4
+compiling shader model_shadow
+compiling shader model_def_shadow_4
+"c:\anomaly\bin\anomalydx8.exe"  -smap2048 
+* phase time: 0 ms
+* phase cmem: 726179 K
+* [x-ray]: Prefetching Data
+Loading objects...
+compiling shader model_def_hq_0
+compiling shader model_def_lq_0
+compiling shader model_def_point_0
+compiling shader model_def_spot_0
+compiling shader model_def_shadow_0
+compiling shader model_env_hq
+compiling shader model_env_hq_0
+compiling shader model_env_lq
+compiling shader model_env_lq_0
+compiling shader model_def_hq_1
+compiling shader model_def_lq_1
+compiling shader model_def_point_1
+compiling shader model_def_spot_1
+compiling shader model_def_shadow_1
+compiling shader model_env_hq_1
+compiling shader model_env_lq_1
+compiling shader simple
+compiling shader model_def_lqs_0
+compiling shader model_env_hq_2
+compiling shader model_env_lq_2
+compiling shader model_def_point_2
+compiling shader model_def_spot_2
+compiling shader model_def_shadow_2
+Loading models...
+Loading textures...
+CResourceManager::DeferredUpload -> START, size = 835
+texture loading time: 3903
+* [x-ray]: Prefetched Data
+* [prefetch] time:   4453 ms
+* [prefetch] memory: 28983Kb
+S.T.A.L.K.E.R. Anomaly version 1.5.3
+using marshal library
+ 
+FATAL ERROR
+ 
+[error]Expression    : <no expression>
+[error]Function      : CInifile::r_section
+[error]File          : Xr_ini.cpp
+[error]Line          : 544
+[error]Description   : fatal error
+[error]Arguments     : Can't open section 'buryy_spawn_sect'. Please attach [*.ini_log] file to your bug report
+ 
+
+stack trace:
+
