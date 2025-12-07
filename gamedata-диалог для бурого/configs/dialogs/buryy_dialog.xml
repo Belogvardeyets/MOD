@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<dialog id="buryy_dialog">
+  <phrase_list>
+
+    <phrase id="0">
+      <text>buryy_0</text>
+      <next>1</next>
+      <give_info>buryy_dialog_started</give_info>
+    </phrase>
+
+    <phrase id="1">
+      <text>buryy_1</text>
+      <next>2</next>
+    </phrase>
+
+    <phrase id="2">
+      <text>buryy_2</text>
+      <next>3</next>
+    </phrase>
+
+    <phrase id="3">
+      <text>buryy_3</text>
+      <next>4</next>
+    </phrase>
+
+    <phrase id="4">
+      <text>buryy_4</text>
+      <next>5</next>
+    </phrase>
+
+    <phrase id="5">
+      <text>buryy_5</text>
+      <next>6</next>
+    </phrase>
+
+    <phrase id="6">
+      <text>buryy_6</text>
+      <next>7</next>
+    </phrase>
+
+    <phrase id="7">
+      <text>buryy_7</text>
+      <next>8</next>
+    </phrase>
+
+    <phrase id="8">
+      <text>buryy_8</text>
+      <give_info>buryy_dialog_done</give_info>
+      <script_functor>buryy_on_dialog_end</script_functor>
+      <destination>-1</destination>
+    </phrase>
+
+  </phrase_list>
+</dialog>
