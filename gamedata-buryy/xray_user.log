@@ -1,4 +1,4 @@
-* Detected CPU: Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz [GenuineIntel], F6/M5/S3, 3601.00 mhz, 21-clk 'rdtsc'
+* Detected CPU: Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz [GenuineIntel], F6/M5/S3, 3601.00 mhz, 24-clk 'rdtsc'
 * CPU features: RDTSC, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, HTT
 * CPU cores/threads: 4/8
 
@@ -6,19 +6,18 @@ Found commandline file!
 Initializing File System...
 using fs-ltx fsgame.ltx
 File System Ready...
-FS: 51201 files cached 68 archives, 10598Kb memory used.
-Init FileSystem 1.606349 sec
+FS: 51202 files cached 68 archives, 10599Kb memory used.
+Init FileSystem 1.478763 sec
 'xrCore' build 9796, Dec  3 2025
 
 Modded exes version 2025.12.03
 
-Game started: 09.12.2025 11:13:05.878
+Game started: 09.12.2025 11:21:19.214
 
 -----loading d:/bottles/windows_10_64/drive_c/anomaly\gamedata\configs\system.ltx [2]
 X-Ray Monolith v1.5.3
 gamedata: 'configs\axr_options.ltx'
 gamedata: 'configs\gameplay\character_desc_buryy.xml'
-gamedata: 'configs\gameplay\profiles\character_desc_buryy.xml'
 gamedata: 'configs\localization.ltx'
 gamedata: 'configs\mod_system_buryy.ltx'
 gamedata: 'configs\scripts\buryy_logic.ltx'
@@ -35,10 +34,10 @@ Executing config-script "user.ltx"...
 Loading DLL: xrRender_R1.dll
 Loading DLL: xrGame.dll
 * [x-ray]: Full Memory Stats
-* [win32]: free[137434454776 K], reserved[4292272 K], committed[206360 K]
+* [win32]: free[137434454768 K], reserved[4292104 K], committed[206536 K]
 * [ D3D ]: textures[0 K]
-* [x-ray]: process heap[57379 K]
-* [x-ray]: shared strings: memory[57320 K], count[41182]
+* [x-ray]: process heap[57375 K]
+* [x-ray]: shared strings: memory[57320 K], count[41181]
 * [x-ray]: shared memory: memory[0 K]
 SOUND: OpenAL: enumerate devices...
 SOUND: OpenAL: system  default SndDevice name is Default Device
@@ -131,10 +130,10 @@ compiling shader hud_font
 intro_start intro_logo
 intro_delete ::update_logo_intro
 * [x-ray]: Full Memory Stats
-* [win32]: free[137433272124 K], reserved[4363124 K], committed[1318160 K]
+* [win32]: free[137433270988 K], reserved[4363480 K], committed[1318940 K]
 * [ D3D ]: textures[16 K]
-* [x-ray]: process heap[674478 K]
-* [x-ray]: shared strings: memory[55563 K], count[122943]
+* [x-ray]: process heap[675092 K]
+* [x-ray]: shared strings: memory[55542 K], count[122945]
 * [x-ray]: shared memory: memory[0 K]
 found script utils_item in unlocalizers data
 found variable scopes_list to unlocal
@@ -880,7 +879,7 @@ compiling shader model_def_shadow_4
 CLevel::CLevel() Spawn Antifreeze initialized
 "d:\bottles\windows_10_64\drive_c\anomaly\bin\anomalydx8avx.exe" -smap2048 
 * phase time: 0 ms
-* phase cmem: 706702 K
+* phase cmem: 706703 K
 * [x-ray]: Prefetching Data
 Loading objects...
 compiling shader model_def_hq_0
@@ -909,10 +908,10 @@ compiling shader model_def_shadow_2
 Loading models...
 Loading textures...
 CResourceManager::DeferredUpload -> START, size = 835
-texture loading time: 1501
+texture loading time: 1564
 * [x-ray]: Prefetched Data
-* [prefetch] time:   1914 ms
-* [prefetch] memory: 35656Kb
+* [prefetch] time:   2020 ms
+* [prefetch] memory: 35655Kb
 opening file d:/bottles/windows_10_64/drive_c/anomaly\gamedata\configs\unlocalizers\unlocalizer_modded_exes_axr_trade_manager.ltx
 creating unlocalizer for script axr_trade_manager
 adding variable ini for unlocalizer for script axr_trade_manager
