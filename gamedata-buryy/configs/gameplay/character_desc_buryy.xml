@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<characters>
+  <specific_character id="buryy_unique" team_default="1">
+    <name>Бурый</name>
+    <bio>Опытный сталкер</bio>
+    <icon>ui_inGame2_buryy</icon>
+    <map_icon x="1" y="0" />
+    <community>monolith</community>
+    <rank>9144</rank>
+    <reputation>-5000</reputation>
+    <snd_config>characters_voice\human\monolith_3\</snd_config>
+    <terrain_sect>stalker_terrain</terrain_sect>
+    <visual>actors\stalker_monolith\stalker_monolith_3</visual>
+    <money min="3000" max="3000" infinitive="0" />
+
+    <supplies>
+	[spawn] \n
+	wpn_val \n
+	ammo_9x39_pab9,300 \n
+	bandit_exo_outfit \n
+	af_dummy_dummy,5 \n
+	af_compass,5 \n
+    </supplies>
+
+    <dialog>buryy_dialog</dialog>
+  </specific_character>
+</characters>
