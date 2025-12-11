@@ -1,22 +1,31 @@
+-- spawn_buryy_unique.lua
 function spawn_buryy_unique()
+    -- Проверка, создан ли уже NPC
     local se_obj = get_story_object("buryy_unique")
     if se_obj then
         printf("Бурый уже существует в игре.")
         return
     end
 
+    -- Координаты спавна
     local pos = vector():set(-19.614, 0.135, 204.504)
-    local lvid = 79673
-    local gvid = 2985 
-    
-    se_obj = alife():create("buryy_spawn_sect", pos, lvid, gvid)
+    local lvid = 79673    -- level vertex id
+    local gvid = 2985     -- game vertex id
+
+    -- Создание NPC как stalker с profile buryy_unique
+    se_obj = alife():create("stalker", pos, lvid, gvid, "buryy_unique")
 
     if not se_obj then
-        printf("ОШИБКА: Не удалось создать секцию buryy_spawn_sect")
+        printf("ОШИБКА: Не удалось создать NPC Бурый")
         return
     end
+
+    -- Установка дополнительных параметров (необязательно)
+    se_obj:set_story_id("buryy_unique")
+    printf("Бурый успешно создан. ID объекта: %s", tostring(se_obj.id))
 end
 
+-- Вызов спавна при старте игры
 function on_game_start()
     spawn_buryy_unique()
 end
